@@ -1,0 +1,54 @@
+/* pages/reading/comment-item/comment-item.wxss */
+.comment-header{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  margin-bottom: 18rpx;
+}
+.comment-header .avatar{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+.comment-header .date{
+  margin-left: 40rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.comment-title{
+  padding: 0 20rpx;
+  margin-bottom: 22rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+.comment-image{
+  margin-bottom: 20rpx;
+}
+.comment-image image{
+  width: 100%;
+  max-height: 500rpx;
+}
+.comment-content{
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  color: #717171;
+  text-align: justify;
+}
+.comment-footer{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  font-size: 20rpx;
+  color: #6F6F6F;
+}
+.comment-footer image{
+  width: 30rpx;
+  height: 34rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+.comment-footer text{
+  margin-right: 40rpx;
+  vertical-align: middle;
+}

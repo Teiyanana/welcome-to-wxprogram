@@ -1,0 +1,22 @@
+<!--pages/reading/comment-detail/comment-detail.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src="{{playingMusic ? commentData.music.coverImg : commentData.headImgSrc}}"></image>
+    <image class="play-btn" catchtap="onPlayMusic" src="{{playingMusic ? '../../../images/music/music-stop.png' : '../../../images/music/music-start.png'}}"></image>
+  </view>
+  <view class="info">
+    <image class="avatar" src="{{commentData.avatar}}"></image>
+    <text class="author">{{commentData.author}}</text>
+    <text>发表于</text>
+    <text>{{commentData.dateTime}}</text>
+  </view>
+  <view class="title">{{commentData.title}}</view>
+  <view class="toolbar">
+    <view class="line"></view>
+    <image class="collect" catchtap="onCollect" src="{{curCollected ? '../../../images/icon/collection.png' : '../../../images/icon/collection-anti.png'}}"></image>
+    <image class="share" catchtap="onShare" src="../../../images/icon/share.png"></image>
+  </view>
+  <view class="content">
+    {{commentData.detail}}
+  </view>
+</view>

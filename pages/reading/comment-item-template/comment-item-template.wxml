@@ -1,0 +1,24 @@
+<!--pages/reading/comment-item/comment-wxml-->
+<template name="comment-item">
+  <view class="comment-item-inner">
+    <view class="comment-header">
+      <image class="avatar" src="{{avatar}}"></image>
+      <text class="date">{{date}}</text>
+    </view>
+    <view class="comment-title">
+      <text>{{title}}</text>
+    </view>
+    <view class="comment-image">
+      <image src="{{imgSrc}}"></image>
+    </view>
+    <view class="comment-content">
+      <text>{{content}}</text>
+    </view>
+    <view class="comment-footer">
+      <image src="/images/icon/chat.png"></image>
+      <text>{{collection}}</text>
+      <image src="/images/icon/view.png"></image>
+      <text>{{reading}}</text>
+    </view>
+  </view>
+</template>

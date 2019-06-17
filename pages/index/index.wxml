@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <image class='avatar' src='/images/avatar/1.png'></image>
+  <text class='text'>欢迎~</text>
+  <button class='entry' bindtap="entryTap">开启小程序之旅</button>
+</view>

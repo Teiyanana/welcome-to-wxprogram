@@ -1,0 +1,27 @@
+<!--pages/reading/reading.wxml-->
+<import src="comment-item-template/comment-item-template.wxml" />
+
+<view>
+  <swiper
+  class="swiper-container"
+  indicator-dots="true"
+  indicator-color="#808080"
+  indicator-active-color="#000"
+  circular="true"
+  autoplay="true"
+  catchtap="onReadSwiperDetail">
+    <swiper-item class="swiper-item" wx:for="{{swiper}}" wx:key="{{index}}">
+      <image class="swiper-img" src="{{item.url}}" data-bannerId="{{item.id}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="comment-list">
+    <view
+    class="comment-item"
+    wx:for="{{commentList}}"
+    wx:key="{{index}}"
+    data-commentId="{{item.postId}}"
+    catchtap="onReadCommentDetail">
+      <template is="comment-item" data="{{...item}}" />
+    </view>
+  </view>
+</view>
